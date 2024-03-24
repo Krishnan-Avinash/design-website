@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UsabilityHub | User Research & Usability Testing Platform</title>
+    <link rel="shortcut icon" href="favicontoo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styling.css" />
+  </head>
+  <body>
+    <div class="container3">
+      <h1>Our team has received your query</h1>
+      <h2>You will receive a mail regarding the same</h2>
+      <h2>Thankyou</h2>
+      <h1>✅</h1>
+    </div>
+    <div class="container2">
+      <h1>
+        Use this ChatBox to send any type of query&nbsp;&nbsp;
+        <span class="crossOption" onclick="cross()">❌</span>
+      </h1>
+      <h2>We would love to help you</h2>
+      <input type="text" id="sendername" placeholder="Enter your name" />
+      <input
+        type="email"
+        class="mailId"
+        id="to"
+        placeholder="Enter your email address"
+      />
+      <textarea
+        required
+        name=""
+        id="message"
+        cols="50"
+        rows="5"
+        class="queryBox"
+        placeholder="Enter your query"
+      ></textarea>
+      <input
+        type="submit"
+        class="submitBtn"
+        onclick="submissionConfirmation()"
+      />
+    </div>
+    <div class="container">
+      <button onclick="popUp()" class="chatbox">
+        <img src="chat.jpg" alt="Error" class="chatt" />
+      </button>
+      <div class="headingbar">
+        <a href="#" class="headingbartxt">
+          <img src="announcementlogo.png" alt="Error" class="announcement" />
+          <div class="txt">Interviews is now in beta! Read more-></div>
+        </a>
+      </div>
+      <main>
+        <div class="secondbar">
+          <div class="leftbar">
+            <a href="index.html" class="logoname">
+              <img src="logo_favicontoo.png" alt="Error" class="companyname" />
+            </a>
+            <div class="nextt">
+              <button>Become a tester</button>
+            </div>
+          </div>
+          <div class="rightbar">
+            <div class="opt1">
+              <a href="templates.html">Product</a>
+            </div>
+            <div class="opt2">
+              <a href="">Customers</a>
+            </div>
+            <div class="opt3">
+              <a href="">Pricing</a>
+            </div>
+            <div class="opt4">
+              <a href=""> Resources </a>
+            </div>
+            <div class="opt5">
+              <button>Sign in</button>
+            </div>
+            <div class="opt6">
+              <button>Sign up</button>
+            </div>
+          </div>
+        </div>
+        <div class="thirdbar">
+          <div class="thirdleftbar">
+            <h1>Design confidently.</h1>
+            <p>
+              UsabilityHub is a remote user research platform that takes the
+              guesswork out of design decisions by validatig them with real
+              users.
+            </p>
+            <button>Get started</button>
+          </div>
+          <div class="thirdrightbar">
+            <img src="big feature image 1.jpg" alt="Error" class="thirdimag" />
+          </div>
+        </div>
+        <div class="forthbar">
+          <p>
+            The world's best companies rely on UsabilityHub to make better
+            design decisions.
+          </p>
+          <div class="companies">
+            <img src="amazon logo.png" alt="Error" class="amaz" />
+            <img src="google logo.png" alt="Error" class="goog" />
+            <img src="taskrabbit.svg" alt="Error" class="task" />
+            <img src="airtable.png" alt="Error" class="air" />
+            <img src="box.png" alt="Error" class="boxx" />
+            <img src="godaddy.png" alt="Error" class="god" />
+            <img src="asana.png" alt="Error" class="asan" />
+          </div>
+        </div>
+        <div class="fifthbar">
+          <div class="fifthtop">
+            <h1>Your user research Swiss Army knife</h1>
+            <button>See all features &#8594;</button>
+          </div>
+          <div class="fifthmiddle">
+            <div class="fifthmiddle1">
+              <img src="Card sorting.svg" alt="Error" class="fm1" />
+              <h2>Card sorting</h2>
+              <p>Discover how people group and label information.</p>
+              <button>Learn more&#8594;</button>
+            </div>
+            <div class="fifthmiddle2">
+              <img src="Prototype test.svg" alt="Error" class="fm2" />
+              <h2>Prototype tests</h2>
+              <p>Discover how people navigate your Figma prototypes.</p>
+              <button>Learn more&#8594;</button>
+            </div>
+            <div class="fifthmiddle3">
+              <img src="first click.svg" alt="Error" class="fm3" />
+              <h2>First click tests</h2>
+              <p>Test interaction with first click and navigation tests.</p>
+              <button>Learn more&#8594;</button>
+            </div>
+          </div>
+          <div class="fifthbottom">
+            <div class="fifthbottom1">
+              <img src="design survey.svg" alt="Error" class="fb1" />
+              <h2>Design surveys</h2>
+              <p>Get feedback on images, videos or audio files.</p>
+              <button>Learn more&#8594;</button>
+            </div>
+            <div class="fifthbottom2">
+              <img src="preference test.svg" alt="Error" class="fb2" />
+              <h2>Preference tests</h2>
+              <p>Find out which designs users prefer and why.</p>
+              <button>Learn more&#8594;</button>
+            </div>
+            <div class="fifthbottom3">
+              <img src="five second test.svg" alt="Error" class="fb3" />
+              <h2>Five second tests</h2>
+              <p>Test comprehensibility by measuring first impressions.</p>
+              <button>Learn more&#8594;</button>
+            </div>
+          </div>
+        </div>
+        <div class="sixthbar">
+          <div class="sixthleft">
+            <img src="bigfeature1.png" alt="Error" class="bf1" />
+          </div>
+          <div class="sixthright">
+            <div class="sixthright1">Effortless validation for</div>
+            <h1>Design professionals</h1>
+            <p class="txts1">
+              Test interfaces, interaction flows, iconography and more, to help
+              you create intuitive and delightful experiences for your users.
+            </p>
+            <img src="chartmogul.png" alt="Error" class="chartmogul" />
+            <p class="txts2">
+              The navigation test is god's gift to UI designers, it probably has
+              the best power-to-simplicity ratio of any software, ever.
+            </p>
+            <div class="person">
+              <img
+                src="bigfeature1_person.png"
+                alt="Error"
+                class="bf1_person"
+              />
+              <div class="databigfeature">
+                <h4>Nick Franklin</h4>
+                <p>Chief Executive Officer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="seventhbar">
+          <div class="seventhleft">
+            <div class="seventhleft1">Optimisation for</div>
+            <h1>Marketers</h1>
+            <p class="txts1">
+              Fine-tune landing pages, messaging, and creative, helping you
+              optimise conversion rates on marketing campaigns and product
+              launches.
+            </p>
+            <img src="philips.png" alt="Error" class="philips" />
+            <p class="txts2">
+              We use UsabilityHub tests to help us make decisions for various
+              projects. From web and mobile design to marketing activities.
+            </p>
+            <div class="person">
+              <img
+                src="bigfeature2_person.png"
+                alt="Error"
+                class="bf1_person"
+              />
+              <div class="databigfeature">
+                <h4>Rick van de Ven</h4>
+                <p>Digital Marketing Analyst</p>
+              </div>
+            </div>
+          </div>
+          <div class="seventhright">
+            <img src="bigfeature2.png" alt="Error" class="bf1" />
+          </div>
+        </div>
+        <div class="eightbar">
+          <div class="eightleft">
+            <img src="big feature 3.png" alt="Error" class="bf1" />
+          </div>
+          <div class="eightright">
+            <div class="eightright1">Easier decision making for</div>
+            <h1>Product managers</h1>
+            <p class="txts1">
+              Ensure you're delivering the right features to the right customers
+              by validating product concepts with your target audience.
+            </p>
+            <img src="economist group.png" alt="Error" class="economistgroup" />
+            <p class="txts2">
+              Adopting UsabilityHub got us into the habit of asking our users
+              questions before locking in decisions.
+            </p>
+            <div class="person">
+              <img
+                src="big feature3_person.png"
+                alt="Error"
+                class="bf1_person"
+              />
+              <div class="databigfeature">
+                <h4>Ron Diorio</h4>
+                <p>VP Innovation & New Products</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ninthbar">
+          <h1>One platform, endless possibilities</h1>
+          <button>See more examples &#8594;</button>
+          <div class="ninththings">
+            <div class="n1">
+              <div class="nin1">
+                <img src="ninthimage_1.jpeg" alt="Error" />
+                <div class="overlay">
+                  <span
+                    >Can users complete a task in my software interface?</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="n2">
+              <div class="nin2">
+                <img src="ninthimage2.jpg" alt="Error" />
+                <div class="overlay">
+                  <span>Can users find important pages on website?</span>
+                </div>
+              </div>
+            </div>
+            <div class="n3">
+              <div class="nin3">
+                <img src="ninthimage3.jpg" alt="Error" />
+                <div class="overlay">
+                  <span>Is my website's intended audience clear?</span>
+                </div>
+              </div>
+            </div>
+            <div class="n4">
+              <div class="nin4">
+                <img src="ninthimage4.jpg" alt="" />
+                <div class="overlay">
+                  <span>Do visitors understand what a page is about?</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="tenthbar">
+        <div class="tenthleft">
+          <h1 class="tenth_mainheading">No participants?</h1>
+          <h1 class="tenth_secondmain">No problem.</h1>
+          <div class="tenthtxt">
+            Our integrated panel allows you to quickly and affordably recruit
+            research participants that precisely match your target audience.
+          </div>
+          <h3 class="tenth_h3">Our panel includes:</h3>
+          <div class="lists">
+            <ul>
+              <li>530k+ panel participants</li>
+              <li><a href="">35+ demographic options</a></li>
+              <li>Free demographic targeting</li>
+            </ul>
+            <ul>
+              <li>Coverage in 100+ countries</li>
+              <li>Average 2hr turn around time</li>
+              <li>Response quality guarantee</li>
+            </ul>
+          </div>
+          <div class="tenthbtns">
+            <button class="tbtn1">Try the panel calculator</button>
+            <p>or</p>
+            <button class="tbtn2">Learn more</button>
+          </div>
+        </div>
+        <div class="tenthright">
+          <img src="tenth_right.png" alt="Error" class="bf1" />
+          <div class="o">
+            <div class="ov">Starting from</div>
+            <div class="usd">USD $ <b>1</b></div>
+            <div class="per_response">per response</div>
+          </div>
+        </div>
+      </div>
+      <div class="eleventhbar">
+        <h1>Start testing today</h1>
+        <p>Take the guesswork out of design decisions</p>
+        <button>Get started</button>
+      </div>
+      <div class="secondlastbar">
+        <a href="index.html" class="sl1">
+          <img src="logo_favicontoo.png" alt="Error" />
+        </a>
+        <div class="sl2">
+          <h2>Product</h2>
+          <ul>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Research panel</li>
+            <li>Customers</li>
+            <li>Status page</li>
+            <li>Sign up</li>
+            <li>Book a demo</li>
+          </ul>
+        </div>
+        <div class="sl3">
+          <h2>Methadologies</h2>
+          <ul>
+            <li>Card sorting</li>
+            <li>Prototype Testing</li>
+            <li>First click tests</li>
+            <li>Preference tests</li>
+            <li>Five second tests</li>
+            <li>Design surveys</li>
+          </ul>
+        </div>
+        <div class="sl4">
+          <h2>Resources</h2>
+          <ul>
+            <li>Blog</li>
+            <li>Examples</li>
+            <li>Testing guides</li>
+            <li>Research panel calculator</li>
+            <li>Help center</li>
+            <li>Contact</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+      </div>
+      <div class="lastbar">
+        <div class="last_leftbar">
+          <div><a href="">Privacy Policy</a></div>
+          <div><a href="">Terms & conditions</a></div>
+          <div><a href="">Security information</a></div>
+        </div>
+        <div class="last_rightbar">
+          <a href="">
+            <img src="fb.png" alt="Error" />
+          </a>
+          <a href="">
+            <img src="twit.png" alt="Error" />
+          </a>
+          <a href="">
+            <img src="li.png" alt="Error" />
+          </a>
+          <a href="">
+            <img src="yt.png" alt="Error" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  background-color: red;
+}
+.dataList {
+}
+.templates {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  color: red;
+}

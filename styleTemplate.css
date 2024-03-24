@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-color-mine: #577592;
+}
+body {
+  font-family: "Commissioner", sans-serif;
+}
+.container {
+  /* height: 100vh; */
+  /* width: 100%; */
+  background-color: white;
+}
+
+main {
+  /* height: 70vh; */
+  max-width: 1500px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+.companyname {
+  height: 50px;
+}
+.secondbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  width: 100%;
+}
+.leftbar {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 20px;
+}
+.rightbar {
+  display: flex;
+  justify-content: space-evenly;
+  gap: -20px;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+}
+
+.opt5 button,
+.opt6 button {
+  font-size: 1.25rem;
+  padding: 15px 25px 15px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s linear 0s;
+  font-weight: 600;
+}
+.opt5 button {
+  background-color: white;
+  border: 1px solid rgba(137, 184, 255, 0.808);
+}
+.opt5 button:hover {
+  border: 1px solid rgb(52, 188, 234);
+  color: rgb(52, 188, 234);
+}
+.opt6 button {
+  background-color: rgb(52, 188, 234);
+  color: white;
+  font-weight: 600;
+  border: 1px solid rgb(52, 188, 234);
+}
+.opt6 button:hover {
+  background-color: rgb(20, 69, 86);
+  border: 1px solid rgb(20, 69, 86);
+}
+.opt1 a,
+.opt2 a,
+.opt4 a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.opt1 a:hover,
+.opt2 a:hover,
+.opt4 a:hover {
+  color: rgb(52, 188, 234);
+}
+.secondlastbar {
+  height: 40vh;
+  width: 100%;
+  background-color: #ebf2fa;
+  display: flex;
+  justify-content: space-around;
+}
+.sl2 h2,
+.sl3 h2,
+.sl4 h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.sl2 ul,
+.sl3 ul,
+.sl4 ul {
+  list-style-type: none;
+}
+.sl2 ul li,
+.sl3 ul li,
+.sl4 ul li {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.1s linear 0s;
+}
+.sl1 img {
+  height: 50px;
+}
+.sl1 img,
+.sl2,
+.sl3,
+.sl4 {
+  margin-top: 103px;
+}
+.sl2 ul li:hover,
+.sl3 ul li:hover,
+.sl4 ul li:hover {
+  color: rgb(52, 188, 234);
+}
+.lastbar {
+  width: 100%;
+  height: 12vh;
+  background-color: #b9cde4;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.last_leftbar {
+  display: flex;
+  gap: 30px;
+}
+.last_leftbar div {
+  font-size: 1.35rem;
+}
+.last_leftbar div a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.1s linear 0s;
+}
+.last_leftbar div a:hover {
+  color: rgb(52, 188, 234);
+}
+.last_rightbar {
+  display: flex;
+  gap: 30px;
+}
+.last_rightbar img {
+  height: 30px;
+}
+.chatt {
+  clip-path: inset(15% 23% 15% 23%);
+  height: 90px;
+  border-radius: 100px;
+}
+.chatbox {
+  height: 75px;
+  width: 75px;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.1s linear 0s;
+}
+.chatbox:hover {
+  transform: scale(1.15);
+}
+.container2 {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  gap: 5px;
+}
+.queryBox {
+  border: 2px solid black;
+  box-shadow: 5px 5px 25px rgb(52, 188, 234);
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 1.2rem;
+}
+.submitBtn {
+  width: 100px;
+  height: fit-content;
+  padding: 8px 16px;
+  font-size: 1.25rem;
+  border-radius: 4px;
+  outline: none;
+  color: white;
+  background-color: rgb(52, 188, 234);
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+.submitBtn:hover {
+  transform: scale(1.1);
+}
+
+.crossOption {
+  cursor: pointer;
+}
+.container3 {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  gap: 5px;
+  z-index: 3;
+  font-size: 1.5rem;
+}
+
+.heading {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.dataList {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.templates {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  height: 10rem;
+  width: 25rem;
+  border: 1px solid black;
+}
