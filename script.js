@@ -47,7 +47,7 @@ function submissionConfirmation() {
     container.style.opacity = "1";
   }, 4000);
   (function () {
-    emailjs.init("pxWtMsZz3fDp-EbC7");
+    emailjs.init("pxWtMsZz3fDp-EbC7"); //public key
   })();
   var params = {
     sendername: document.querySelector("#sendername").value,
