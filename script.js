@@ -52,8 +52,6 @@ function submissionConfirmation() {
   var params = {
     sendername: document.querySelector("#sendername").value,
     to: document.querySelector("#to").value,
-    // subject: document.querySelector("#subject").value,
-    // replyto: document.querySelector("#replyto").value,
     message: document.querySelector("#message").value,
   };
 

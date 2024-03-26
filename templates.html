@@ -26,10 +26,17 @@
         <span class="crossOption" onclick="cross()">❌</span>
       </h1>
       <h2>We would love to help you</h2>
+      <input type="text" id="sendername" placeholder="Enter your name" />
+      <input
+        type="email"
+        class="mailId"
+        id="to"
+        placeholder="Enter your email address"
+      />
       <textarea
         required
         name=""
-        id=""
+        id="message"
         cols="50"
         rows="5"
         class="queryBox"
@@ -71,56 +78,58 @@
       </div>
       <h1 class="heading">TEMPLATES</h1>
       <div class="dataList"></div>
+      <div class="secondlastbar">
+        <a href="index.html" class="sl1">
+          <img src="logo_favicontoo.png" alt="Error" />
+        </a>
+        <div class="sl2">
+          <h2>Product</h2>
+          <ul>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Research panel</li>
+          </ul>
+        </div>
+        <div class="sl3">
+          <h2>Methadologies</h2>
+          <ul>
+            <li>Card sorting</li>
+            <li>Prototype Testing</li>
+          </ul>
+        </div>
+        <div class="sl4">
+          <h2>Resources</h2>
+          <ul>
+            <li>Blog</li>
+            <li>Examples</li>
+            <li>Testing guides</li>
+          </ul>
+        </div>
+      </div>
+      <div class="lastbar">
+        <div class="last_leftbar">
+          <div><a href="">Privacy Policy</a></div>
+          <div><a href="">Terms & conditions</a></div>
+          <div><a href="">Security information</a></div>
+        </div>
+        <div class="last_rightbar">
+          <a href="">
+            <img src="fb.png" alt="Error" />
+          </a>
+          <a href="">
+            <img src="twit.png" alt="Error" />
+          </a>
+          <a href="">
+            <img src="li.png" alt="Error" />
+          </a>
+          <a href="">
+            <img src="yt.png" alt="Error" />
+          </a>
+        </div>
+      </div>
     </main>
-    <div class="secondlastbar">
-      <a href="index.html" class="sl1">
-        <img src="logo_favicontoo.png" alt="Error" />
-      </a>
-      <div class="sl2">
-        <h2>Product</h2>
-        <ul>
-          <li>Overview</li>
-          <li>Pricing</li>
-          <li>Research panel</li>
-        </ul>
-      </div>
-      <div class="sl3">
-        <h2>Methadologies</h2>
-        <ul>
-          <li>Card sorting</li>
-          <li>Prototype Testing</li>
-        </ul>
-      </div>
-      <div class="sl4">
-        <h2>Resources</h2>
-        <ul>
-          <li>Blog</li>
-          <li>Examples</li>
-          <li>Testing guides</li>
-        </ul>
-      </div>
-    </div>
-    <div class="lastbar">
-      <div class="last_leftbar">
-        <div><a href="">Privacy Policy</a></div>
-        <div><a href="">Terms & conditions</a></div>
-        <div><a href="">Security information</a></div>
-      </div>
-      <div class="last_rightbar">
-        <a href="">
-          <img src="fb.png" alt="Error" />
-        </a>
-        <a href="">
-          <img src="twit.png" alt="Error" />
-        </a>
-        <a href="">
-          <img src="li.png" alt="Error" />
-        </a>
-        <a href="">
-          <img src="yt.png" alt="Error" />
-        </a>
-      </div>
-    </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
     <script src="scriptTemplate.js"></script>
   </body>
 </html>
