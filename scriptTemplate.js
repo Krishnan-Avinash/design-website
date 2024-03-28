@@ -14,8 +14,11 @@ function fetchData() {
         a.target = "_blank";
         a.textContent = template.templateLink;
         h3.textContent = template.templateDescription;
+        const h5 = document.createElement("h5");
+        h5.textContent = `Template posted by:  ${template.templateOwner}`;
         templates.appendChild(h3);
         templates.appendChild(a);
+        templates.appendChild(h5);
         dataList.appendChild(templates);
       });
     });

@@ -890,7 +890,8 @@ main {
 .crossOption {
   cursor: pointer;
 }
-.container3 {
+.container3,
+.container4 {
   display: none;
   position: fixed;
   flex-direction: column;

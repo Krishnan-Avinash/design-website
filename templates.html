@@ -14,6 +14,44 @@
     <link rel="stylesheet" href="styleTemplate.css" />
   </head>
   <body>
+    <div class="container5">
+      <h1>Your website template has been successfully uploaded</h1>
+      <h2>You will receive a mail regarding the same</h2>
+      <h2>Thankyou</h2>
+      <h1>✅</h1>
+    </div>
+    <div class="container4">
+      <h1>
+        Kindly enter all these details to proceed&nbsp;&nbsp;
+        <span class="crossOption" onclick="cross2()">❌</span>
+      </h1>
+      <input type="text" id="sendername2" placeholder="Enter your name" />
+      <input
+        type="email"
+        class="mailId2"
+        id="to2"
+        placeholder="Enter your email address"
+      />
+      <input
+        type="number"
+        id="phonenumber2"
+        placeholder="Enter your Mobile Number"
+      />
+      <input
+        type="text"
+        id="web-link"
+        placeholder="Paste your hosted website URL"
+      />
+      <input
+        type="text"
+        id="message"
+        class="description"
+        name=""
+        id=""
+        placeholder="Enter description about your website"
+      />
+      <input type="submit" class="submitBtn" onclick="templateUpdation()" />
+    </div>
     <div class="container3">
       <h1>Our team has received your query</h1>
       <h2>You will receive a mail regarding the same</h2>
@@ -48,10 +86,10 @@
         onclick="submissionConfirmation()"
       />
     </div>
+    <button onclick="popUp()" class="chatbox">
+      <img src="chat.jpg" alt="Error" class="chatt" />
+    </button>
     <main class="container">
-      <button onclick="popUp()" class="chatbox">
-        <img src="chat.jpg" alt="Error" class="chatt" />
-      </button>
       <div class="secondbar">
         <div class="leftbar">
           <a href="index.html" class="logoname">
@@ -76,7 +114,14 @@
           </div>
         </div>
       </div>
-      <h1 class="heading">TEMPLATES</h1>
+      <section class="template-heading">
+        <h1 class="heading">TEMPLATES</h1>
+        <div class="nextt">
+          <button class="add-template" onclick="popUp2()">
+            Add your own template
+          </button>
+        </div>
+      </section>
       <div class="dataList"></div>
       <div class="secondlastbar">
         <a href="index.html" class="sl1">
@@ -130,6 +175,7 @@
     </main>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js"></script>
+    <script src="addTemplate.js"></script>
     <script src="scriptTemplate.js"></script>
   </body>
 </html>

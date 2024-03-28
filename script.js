@@ -14,16 +14,18 @@ const container3 = document.querySelector(".container3");
 const crossOptionn = document.querySelector(".crossOption");
 const mailId = document.querySelector(".mailId");
 const queryBox = document.querySelector(".queryBox");
+const sendername = document.querySelector("#sendername");
+// const to = document.querySelector("#to");
 function popUp() {
   container2.style.display = "flex";
-  container.style.opacity = "0.1";
-  container2.style.opacity = "1";
+  container.style.filter = "blur(50px)";
+  container2.style.filter = "blur(0px)";
 }
 
 function cross() {
   container2.style.display = "none";
-  container.style.opacity = "1";
-  container2.style.opacity = "1";
+  container.style.filter = "blur(0px)";
+  container2.style.filter = "blur(0px)";
 }
 
 function submissionConfirmation() {
@@ -32,19 +34,19 @@ function submissionConfirmation() {
     queryToAsk: queryBox.value,
   });
 
-  if (queryBox.value == "") {
-    window.alert("Kindly enter some query");
+  if (queryBox.value == "" || sendername.value == "" || mailId.value == "") {
+    window.alert("Kindly enter all the required data");
     return;
   } else {
     container3.style.display = "flex";
-    container2.style.opacity = "0.15";
-    container.style.opacity = "0.1";
+    container2.style.filter = "blur(50px)";
+    container.style.filter = "blur(50px)";
   }
   setTimeout(() => {
     container3.style.display = "none";
     container2.style.display = "none";
     container.style.display = "block";
-    container.style.opacity = "1";
+    container.style.filter = "blur(0px)";
   }, 4000);
   (function () {
     emailjs.init("pxWtMsZz3fDp-EbC7"); //public key
